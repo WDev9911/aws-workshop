@@ -1,5 +1,5 @@
 ---
-title: "Workshop"
+title: "Buổi hội thảo"
 date: "`r Sys.Date()`"
 weight: 5
 chapter: false

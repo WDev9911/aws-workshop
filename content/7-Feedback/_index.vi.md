@@ -1,44 +1,52 @@
 ---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Ý kiến chia sẻ & góp ý"
 date: "`r Sys.Date()`"
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+> Dưới đây là phần chia sẻ cá nhân của tôi về trải nghiệm trong kỳ thực tập tại AWS Vietnam thuộc chương trình First Cloud Journey. Những nhận xét này có thể giúp đội ngũ FCJ cải thiện và nâng cao chất lượng chương trình trong tương lai.
 
-### Đánh giá chung
+### Overall Evaluation
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường làm việc tại AWS Vietnam vừa chuyên nghiệp vừa thân thiện. Mọi người luôn sẵn sàng hỗ trợ khi tôi gặp khó khăn về kỹ thuật, đặc biệt là với các dịch vụ AWS mà tôi chưa từng sử dụng trước đây. Không gian làm việc sạch sẽ, thoải mái và đầy đủ trang thiết bị cần thiết cho việc học tập và phát triển. Tôi cảm thấy được chào đón ngay từ ngày đầu và văn hóa hợp tác giúp tôi nhanh chóng hòa nhập với đội nhóm.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+**2. Hỗ trợ từ Mentor / Team Admin**  
+Mentor của tôi hỗ trợ rất nhiều về mặt kỹ thuật, đặc biệt là về kiến trúc cloud trên AWS, serverless workflows và các best practices. Khi tôi gặp vấn đề với S3, MediaConvert hoặc IVS, mentor luôn đưa ra gợi ý thay vì câu trả lời trực tiếp, giúp tôi phát triển khả năng tự giải quyết vấn đề.  
+Đội admin cũng rất chu đáo trong việc hỗ trợ thủ tục, tài liệu, lịch trình và tạo điều kiện tốt nhất để tôi tập trung học tập.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+**3. Mức độ liên quan giữa công việc và chuyên ngành**  
+Dự án tôi tham gia—xây dựng **Video Sharing & Livestream Platform** bằng **.NET 8**, **AWS Serverless**, **DynamoDB** và **event-driven architecture**—liên quan trực tiếp đến chuyên ngành kỹ thuật phần mềm của tôi. Công việc giúp tôi áp dụng kiến thức đã học ở trường và tiếp cận nhiều công nghệ cloud thực tế mà chương trình đại học chưa dạy. Nhờ đó, tôi nâng cao cả kiến thức nền tảng lẫn kỹ năng thực tiễn.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+**4. Cơ hội học tập & phát triển kỹ năng**  
+Kỳ thực tập đem lại cho tôi rất nhiều cơ hội học hỏi. Tôi được tiếp xúc và làm việc trực tiếp với nhiều dịch vụ AWS (S3, Lambda, MediaConvert, Rekognition, IVS, DynamoDB), Clean Architecture và phát triển API. Tôi cũng cải thiện kỹ năng debug, viết tài liệu, code standards và thiết kế hệ thống cloud.  
+Thông qua mentor và các buổi workshop, tôi học thêm về scalability, security, cost-optimization và các workflow phát triển hiện đại—đây đều là những kỹ năng giá trị cho sự nghiệp sau này.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**5. Văn hoá công ty & tinh thần đồng đội**  
+Văn hoá tại AWS Vietnam rất tích cực, hỗ trợ và đề cao sự phát triển. Mọi người tôn trọng nhau, làm việc nghiêm túc nhưng vẫn giữ được sự vui vẻ. Dù chỉ là intern, tôi vẫn cảm nhận được mình là một phần của đội nhóm. Khi gặp khó khăn, mọi người luôn sẵn sàng giúp đỡ, tạo nên một môi trường học tập thân thiện và tràn đầy động lực.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+**6. Chính sách & phúc lợi thực tập**  
+Chương trình thực tập mang lại thời gian linh hoạt, phụ cấp và quyền truy cập vào nhiều tài liệu học tập về AWS. Tôi đặc biệt trân trọng các buổi chia sẻ hằng tuần, tài liệu nội bộ và định hướng liên quan đến chứng chỉ AWS. Những phúc lợi này giúp tôi duy trì sự cân bằng giữa hiệu suất làm việc và phát triển bản thân.
 
+---
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+### Additional Questions
 
+**• Điều gì làm bạn hài lòng nhất trong kỳ thực tập?**  
+Tôi hài lòng nhất với cơ hội được xây dựng một dự án cloud thực tế từ đầu bằng các dịch vụ AWS. Việc nhìn thấy hệ thống video platform và livestream hoạt động end-to-end mang lại cảm giác rất tự hào. Tôi cũng đánh giá cao sự hỗ trợ nhiệt tình và thân thiện từ mentor và các thành viên trong team.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+**• Công ty nên cải thiện gì cho các khóa thực tập tiếp theo?**  
+Công ty có thể bổ sung thêm các hoạt động gắn kết như team bonding hoặc các buổi chia sẻ nhóm nhỏ giữa các intern để tăng sự tương tác và học hỏi lẫn nhau.
+
+**• Bạn có giới thiệu chương trình này cho bạn bè không? Vì sao?**  
+Có. Chương trình mang đến trải nghiệm cloud thực tế, mentorship chất lượng và dự án mang tính ứng dụng cao. Đây là lựa chọn tuyệt vời cho các bạn muốn phát triển kỹ năng backend và cloud.
+
+---
+
+### Suggestions & Expectations
+
+- Tôi đề xuất tổ chức thêm nhiều workshop nội bộ tập trung vào các bài lab thực hành hoặc best practices cho từng dịch vụ AWS cụ thể.  
+- Tôi sẵn sàng tiếp tục tham gia các chương trình tiếp theo nếu có cơ hội.  
+- Tổng kết lại, tôi rất biết ơn trải nghiệm thực tập tại FCJ và AWS Vietnam. Đây là môi trường giúp tôi trưởng thành rõ rệt cả về kỹ thuật lẫn tư duy chuyên nghiệp.
