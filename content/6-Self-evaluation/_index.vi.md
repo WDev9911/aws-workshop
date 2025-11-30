@@ -1,40 +1,45 @@
 ---
-title: "Tự đánh giá"
+title: "Self-Assessment"
 date: "`r Sys.Date()`"
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Trong kỳ thực tập tại **Amazon Web Services (AWS) Vietnam** từ **Tháng 9/2025** đến **Tháng 11/2025**, tôi đã áp dụng kiến thức về cloud và backend để xây dựng một **Video Sharing & Livestream Platform** hoàn chỉnh sử dụng **.NET 8 Web API**, **Clean Architecture**, cùng nhiều **AWS Services** như S3, MediaConvert, DynamoDB, Lambda, CloudFront và IVS.  
+Trong suốt quá trình phát triển dự án, tôi cải thiện đáng kể các kỹ năng về **thiết kế hệ thống**, **kiến trúc cloud**, **giải quyết vấn đề**, **phát triển API**, và **làm việc nhóm**.
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Tôi chịu trách nhiệm triển khai nhiều tính năng cốt lõi của hệ thống, bao gồm:
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+- Upload video → S3 → MediaConvert transcoding  
+- Tự động phát hiện nội dung nhạy cảm bằng Amazon Rekognition  
+- Hệ thống kênh và subscribe  
+- Chức năng like, comment (kèm upload ảnh) và workflow thông báo  
+- Hệ thống livestream với Amazon IVS + EventBridge + Lambda  
+- API dựa trên Clean Architecture với MediatR, FluentValidation và ProblemDetails  
+- Triển khai backend trên Azure và frontend trên Vercel  
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Tôi luôn cố gắng hoàn thành công việc với chất lượng tốt, tuân thủ coding standards, giao tiếp rõ ràng với teammates, và chủ động nghiên cứu các best practices của AWS để hoàn thiện dự án.
 
+Để đánh giá bản thân một cách khách quan, tôi đưa ra bảng tự đánh giá sau:
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+| STT | Tiêu chí                               | Mô tả                                                                                              | Tốt | Khá | TB |
+| --- | -------------------------------------- | --------------------------------------------------------------------------------------------------- | --- | --- | --- |
+| 1   | **Kiến thức & kỹ năng chuyên môn**     | Áp dụng kiến thức cloud; xây API; tích hợp S3, MediaConvert, DynamoDB, IVS hiệu quả               | ✅  | ☐  | ☐  |
+| 2   | **Khả năng học hỏi**                   | Học nhanh các dịch vụ AWS mới và thích ứng tốt với các tình huống cloud phức tạp                  | ✅  | ☐  | ☐  |
+| 3   | **Tính chủ động**                      | Chủ động nghiên cứu tài liệu AWS và khám phá các mô hình thiết kế mới                             | ☐  | ✅ | ☐  |
+| 4   | **Tinh thần trách nhiệm**              | Hoàn thành nhiệm vụ đúng hạn và đảm bảo chất lượng mã nguồn                                       | ✅  | ☐  | ☐  |
+| 5   | **Kỷ luật**                             | Đôi lúc chưa duy trì ổn định lịch tự học                                                           | ☐  | ☐  | ☐  |
+| 6   | **Tinh thần cầu tiến**                 | Tiếp thu góp ý và cải thiện cấu trúc code và workflow cloud                                       | ✅  | ☐  | ☐  |
+| 7   | **Giao tiếp**                          | Giao tiếp tốt với teammates; đang cải thiện khả năng giải thích kỹ thuật                          | ☐  | ✅ | ☐  |
+| 8   | **Làm việc nhóm**                      | Tham gia tích cực vào thảo luận và hỗ trợ các thành viên khác                                     | ✅  | ☐  | ☐  |
+| 9   | **Tác phong chuyên nghiệp**            | Giữ thái độ chuyên nghiệp và tuân thủ văn hoá làm việc của AWS                                    | ✅  | ☐  | ☐  |
+| 10  | **Giải quyết vấn đề**                  | Xử lý các lỗi transcoding, sự kiện IVS và vấn đề truy cập S3                                      | ☐  | ✅ | ☐  |
+| 11  | **Đóng góp cho dự án/nhóm**            | Triển khai nhiều tính năng quan trọng và cải thiện tích hợp cloud tổng thể                        | ✅  | ☐  | ☐  |
+| 12  | **Đánh giá chung**                     | Thể hiện rõ sự tiến bộ kỹ thuật và tinh thần cam kết                                               | ✅  | ☐  | ☐  |
 
-### Cần cải thiện
+### Điểm cần cải thiện
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+* Cải thiện tính kỷ luật và duy trì lịch tự học ổn định hơn  
+* Nâng cao khả năng giải quyết vấn đề đối với các kiến trúc cloud phức tạp  
+* Cải thiện kỹ năng giao tiếp, đặc biệt trong việc giải thích thiết kế hệ thống và báo cáo kỹ thuật  

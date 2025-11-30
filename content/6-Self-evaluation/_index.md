@@ -6,34 +6,42 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **Amazon Web Services (AWS) Vietnam)** from **September 2025** to **November 2025**, I applied my cloud and backend knowledge to build a real-world **Video Sharing & Livestream Platform** using **.NET 8 Web API**, **Clean Architecture**, and various **AWS Services** such as S3, MediaConvert, DynamoDB, Lambda, CloudFront, and IVS.  
+Throughout this project, I improved significantly in areas such as **system design**, **cloud architecture**, **problem-solving**, **API development**, and **team collaboration**.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+I was responsible for implementing many core features of the platform, including:
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+- Video upload → S3 → MediaConvert transcoding  
+- Automatic unsafe-content detection using Amazon Rekognition  
+- Channel management and subscription system  
+- Like, comment (with image upload), and notification workflow  
+- Livestream management using Amazon IVS + EventBridge + Lambda  
+- API development under Clean Architecture with MediatR, FluentValidation, and ProblemDetails  
+- Deploying backend on Azure and frontend on Vercel  
+
+I always strived to complete tasks with quality, followed coding standards, communicated clearly with teammates, and proactively studied AWS best practices to improve the project.
+
+To evaluate my progress objectively, I provide the following assessment:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| 1   | **Professional knowledge & skills** | Applied cloud concepts; built APIs; integrated S3, MediaConvert, DynamoDB, IVS effectively       | ✅    | ☐    | ☐       |
+| 2   | **Ability to learn**                | Quickly learned new AWS services and adapted to complex cloud scenarios                          | ✅    | ☐    | ☐       |
+| 3   | **Proactiveness**                   | Proactively researched AWS docs and explored new design patterns                                 | ☐    | ✅    | ☐       |
+| 4   | **Sense of responsibility**         | Delivered assigned tasks on time and ensured code quality                                        | ✅    | ☐    | ☐       |
+| 5   | **Discipline**                      | Occasionally inconsistent study schedule                                                         | ☐    | ☐    | ☐       |
+| 6   | **Progressive mindset**             | Accepted feedback and improved code structure and cloud workflows                                | ✅    | ☐    | ☐       |
+| 7   | **Communication**                   | Communicated well with teammates; improving technical explanation                                | ☐    | ✅    | ☐       |
+| 8   | **Teamwork**                        | Participated actively in team discussions and supported members                                  | ✅    | ☐    | ☐       |
+| 9   | **Professional conduct**            | Maintained professionalism and followed AWS work culture                                          | ✅    | ☐    | ☐       |
+| 10  | **Problem-solving skills**          | Solved issues in transcoding, IVS events, and S3 object access                                   | ☐    | ✅    | ☐       |
+| 11  | **Contribution to project/team**    | Added meaningful features and improved overall cloud integration                                 | ✅    | ☐    | ☐       |
+| 12  | **Overall**                         | Demonstrated technical growth and strong commitment                                               | ✅    | ☐    | ☐       |
+
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Improve discipline and maintain a more consistent self-learning schedule  
+* Strengthen problem-solving for complex cloud architectures  
+* Enhance communication skills, especially in explaining system design and reporting  
