@@ -1,59 +1,39 @@
 ---
-title: "Worklog Tuần 7"
+title: "Week 7 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 7:
 
-### Mục tiêu tuần 7:
+* Hiểu các khái niệm nền tảng về Infrastructure as Code (IaC).
+* Tìm hiểu các khái niệm chính trong AWS CloudFormation: templates, stacks, resources.
+* Khám phá cấu trúc template CloudFormation sử dụng YAML/JSON.
+* Thực hành triển khai hạ tầng bằng CloudFormation.
+* Học cách cập nhật, xóa và xử lý lỗi khi triển khai CloudFormation stack.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Tìm hiểu các khái niệm về Infrastructure as Code <br>&emsp;+ Lợi ích của IaC <br>&emsp;+ Phân biệt IaC dạng khai báo (Declarative) và mệnh lệnh (Imperative) | 22/09/2025 | 22/09/2025 | https://aws.amazon.com/what-is/iac/ |
+| 2   | - Học về CloudFormation cơ bản: <br>&emsp;+ Stacks <br>&emsp;+ Templates <br>&emsp;+ Resources, Parameters, Outputs | 23/09/2025 | 23/09/2025 | https://docs.aws.amazon.com/cloudformation |
+| 3   | - Hiểu cấu trúc template CloudFormation <br>&emsp;+ Các loại AWS::Resource <br>&emsp;+ Các intrinsic functions (Ref, Fn::GetAtt, …) | 24/09/2025 | 24/09/2025 | https://docs.aws.amazon.com/AWSCloudFormation/latest |
+| 4   | - **Thực hành:** Triển khai stack đơn giản <br>&emsp;+ S3 bucket <br>&emsp;+ IAM role <br>&emsp;+ EC2 instance | 25/09/2025 | 25/09/2025 | https://cloudjourney.awsstudygroup.com |
+| 5   | - Học về cập nhật stack: <br>&emsp;+ Change sets <br>&emsp;+ Update policies <br>&emsp;+ Rollback behavior | 26/09/2025 | 26/09/2025 | https://docs.aws.amazon.com/cloudformation |
+| 6   | - **Thực hành:** <br>&emsp;+ Chỉnh sửa stack hiện tại <br>&emsp;+ Thêm tài nguyên mới <br>&emsp;+ Xử lý lỗi cập nhật & rollback | 27/09/2025 | 27/09/2025 | https://docs.aws.amazon.com/cloudformation |
 
-### Kết quả đạt được tuần 7:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 7:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ về Infrastructure as Code và tầm quan trọng của IaC trong tự động hóa cloud.
+* Nắm được cấu trúc và các thành phần của CloudFormation template.
+* Triển khai thành công CloudFormation stack bao gồm S3, IAM và EC2.
+* Thực hành cập nhật stack bằng change sets và hiểu cách hoạt động của rollback.
+* Biết sử dụng các intrinsic functions như Ref và Fn::GetAtt trong templates.
+* Tăng cường kỹ năng tự động hóa bằng cách triển khai hạ tầng theo mô hình khai báo (declarative IaC).

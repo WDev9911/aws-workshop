@@ -1,59 +1,40 @@
 ---
-title: "Worklog Tuần 9"
+title: "Week 9 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 9:
 
-### Mục tiêu tuần 9:
+* Tìm hiểu các dịch vụ cơ sở dữ liệu quan hệ (Relational Database) trên AWS.
+* Hiểu kiến trúc của Amazon RDS, cơ chế backup, Multi-AZ và bảo trì hệ thống.
+* Khám phá Amazon Aurora và lợi ích về hiệu năng/khả năng mở rộng.
+* Học cách kết nối ứng dụng với RDS và quản lý bảo mật cơ sở dữ liệu.
+* Triển khai, cấu hình và kiểm thử một RDS instance thực tế.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Tìm hiểu kiến thức nền tảng về RDS <br>&emsp;+ DB instances <br>&emsp;+ Parameter groups & Option groups <br>&emsp;+ Multi-AZ vs Read Replicas | 06/10/2025 | 06/10/2025 | https://docs.aws.amazon.com/rds |
+| 2   | - Tìm hiểu bảo mật của RDS: <br>&emsp;+ Subnet groups <br>&emsp;+ Security groups <br>&emsp;+ Cơ chế authentication & encryption | 07/10/2025 | 07/10/2025 | https://docs.aws.amazon.com/rds |
+| 3   | - **Thực hành:** Tạo RDS MySQL/PostgreSQL instance <br>&emsp;+ Cấu hình subnet group <br>&emsp;+ Kết nối bằng công cụ client | 08/10/2025 | 08/10/2025 | https://cloudjourney.awsstudygroup.com |
+| 4   | - Tìm hiểu kiến thức cơ bản về Aurora <br>&emsp;+ Cấu trúc cluster <br>&emsp;+ Writer & Reader endpoints <br>&emsp;+ Storage autoscaling | 09/10/2025 | 09/10/2025 | https://docs.aws.amazon.com/aurora |
+| 5   | - So sánh RDS và Aurora <br>&emsp;+ Hiệu năng <br>&emsp;+ Khả năng chịu lỗi <br>&emsp;+ Chi phí vận hành | 10/10/2025 | 10/10/2025 | https://aws.amazon.com/rds/aurora/ |
+| 6   | - **Thực hành:** <br>&emsp;+ Triển khai Aurora Serverless v2 cluster <br>&emsp;+ Kiểm tra failover giữa các endpoints <br>&emsp;+ Giám sát hiệu năng DB bằng CloudWatch | 11/10/2025 | 11/10/2025 | https://docs.aws.amazon.com/aurora |
 
-### Kết quả đạt được tuần 9:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 9:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ cách Amazon RDS cung cấp dịch vụ quản lý cơ sở dữ liệu quan hệ.
+* Cấu hình được subnet group, security group và DB parameters cho RDS.
+* Triển khai thành công RDS instance và kết nối bằng MySQL/PostgreSQL client.
+* Nắm kiến thức về kiến trúc Aurora và cách hoạt động của writer/reader endpoints trong môi trường high availability.
+* So sánh được sự khác biệt giữa RDS và Aurora liên quan đến hiệu năng, khả năng mở rộng và chi phí.
+* Thực hành giám sát hiệu năng database bằng CloudWatch metrics.
+* Tăng cường kỹ năng lựa chọn và cấu hình dịch vụ database phù hợp với ứng dụng chạy trên cloud.

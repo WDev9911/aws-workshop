@@ -1,59 +1,59 @@
 ---
-title: "Worklog Tuần 11"
+title: "Week 11 Worklog"
 date: "`r Sys.Date()`"
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 11:
 
-### Mục tiêu tuần 11:
+* Chuyển đổi yêu cầu hệ thống thành tài liệu đặc tả API chi tiết.
+* Viết đầy đủ các luồng use-case cho những tính năng chính.
+* Thiết kế kiến trúc backend theo mô hình Clean Architecture (.NET 8).
+* Xác định toàn bộ endpoints, request/response DTOs và cấu trúc controller.
+* Hoàn thiện các access patterns của DynamoDB và tích hợp chúng vào thiết kế API.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Xác định chi tiết các use-case cho MVP: <br>&emsp;+ Đăng ký & đăng nhập người dùng <br>&emsp;+ Tạo channel <br>&emsp;+ Quy trình upload video <br>&emsp;+ Luồng Comment/Like/Subscribe | 20/10/2025 | 20/10/2025 | Ghi chú dự án |
+| 2   | - Thiết kế API endpoints: <br>&emsp;+ Các route theo chuẩn RESTful <br>&emsp;+ Phương thức HTTP <br>&emsp;+ Điều kiện xác thực | 21/10/2025 | 21/10/2025 | API Design Guidelines |
+| 3   | - Xác định request/response DTOs: <br>&emsp;+ User DTO <br>&emsp;+ Video DTO <br>&emsp;+ Channel DTO <br>&emsp;+ Comment DTO <br>&emsp;+ Subscription DTO | 22/10/2025 | 22/10/2025 | API nội bộ |
+| 4   | - Thiết kế kiến trúc Backend (.NET): <br>&emsp;+ Cấu trúc dự án (API, Application, Domain, Infrastructure) <br>&emsp;+ Dependency Injection <br>&emsp;+ Service interfaces & implementations | 23/10/2025 | 23/10/2025 | Clean Architecture Templates |
+| 5   | - Mapping DynamoDB access patterns → API flows: <br>&emsp;+ PK/SK lookups <br>&emsp;+ Các query pattern <br>&emsp;+ Sử dụng GSI để list videos, comments, … | 24/10/2025 | 24/10/2025 | DynamoDB Docs |
+| 6   | - Soạn thảo tài liệu đặc tả kỹ thuật bản 1: <br>&emsp;+ Use-case diagrams <br>&emsp;+ Danh sách API <br>&emsp;+ ERD/DynamoDB schema <br>&emsp;+ Architecture diagram | 25/10/2025 | 25/10/2025 | diagrams.net |
 
-### Kết quả đạt được tuần 11:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 11:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành **luồng use-case chi tiết** cho toàn bộ tính năng MVP, bao gồm:
+  - Xác thực người dùng (Cognito)
+  - Quy trình upload & xử lý video qua S3 + MediaConvert
+  - Tính năng Comment, Like, Subscribe
+  - Quản lý Channel
+  - Luồng thông báo & livestream
+* Thiết kế đầy đủ **đặc tả REST API**, bao gồm:
+  - Danh sách endpoint
+  - Phương thức HTTP và cấu trúc request/response
+  - Điều kiện xác thực & phân quyền
+  - Kế hoạch xử lý lỗi
+* Xây dựng kiến trúc backend ban đầu theo mô hình **Clean Architecture**:
+  - Domain layer (entities, value objects)
+  - Application layer (services, interfaces, DTOs, validators)
+  - Infrastructure layer (repository DynamoDB, AWS SDK integration)
+  - API layer (controllers, middleware xử lý exception)
+* Hoàn thiện mapping giữa **DynamoDB access patterns** và logic API:
+  - Query Videos theo ChannelId (GSI)
+  - Lấy Comments theo VideoId (PK)
+  - Kiểm tra trạng thái Subscriptions (PK/SK)
+  - Đếm số lượng Likes (query theo VideoId)
+* Xây dựng bản **Tài liệu kỹ thuật v1** bao gồm:
+  - Use-case diagram
+  - ERD / sơ đồ quan hệ của DynamoDB
+  - Kiến trúc backend
+  - Danh sách API & mô tả data flow

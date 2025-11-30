@@ -1,58 +1,42 @@
 ---
-title: "Worklog Tuần 6"
+title: "Week 6 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 6:
 
-### Mục tiêu tuần 6:
+* Hiểu các nguyên lý DevOps và khái niệm CI/CD trên AWS.
+* Tìm hiểu AWS CodePipeline và cách nó tự động hóa quy trình triển khai phần mềm.
+* Khám phá CodeBuild để build và kiểm thử mã nguồn.
+* Học về các chiến lược triển khai trong CodeDeploy (EC2, ECS).
+* Xây dựng và kiểm thử một pipeline CI/CD hoàn chỉnh.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Tìm hiểu khái niệm cơ bản về CI/CD <br>&emsp;+ Continuous Integration <br>&emsp;+ Continuous Delivery & Deployment <br>&emsp;+ Deployment strategies | 15/09/2025 | 15/09/2025 | https://aws.amazon.com/devops/ |
+| 2   | - Tìm hiểu AWS CodePipeline: <br>&emsp;+ Stages <br>&emsp;+ Actions <br>&emsp;+ Artifacts | 16/09/2025 | 16/09/2025 | https://docs.aws.amazon.com/codepipeline |
+| 3   | - Tìm hiểu CodeBuild: <br>&emsp;+ Buildspec.yml <br>&emsp;+ Build environments <br>&emsp;+ Logs & artifacts | 17/09/2025 | 17/09/2025 | https://docs.aws.amazon.com/codebuild |
+| 4   | - **Thực hành:** Tạo CodeBuild project <br>&emsp;+ Build & test mã nguồn mẫu <br>&emsp;+ Lưu trữ build artifacts | 18/09/2025 | 18/09/2025 | https://cloudjourney.awsstudygroup.com |
+| 5   | - Tìm hiểu CodeDeploy: <br>&emsp;+ AppSpec.yml <br>&emsp;+ Deployment groups <br>&emsp;+ Deployment revisions | 19/09/2025 | 19/09/2025 | https://docs.aws.amazon.com/codedeploy |
+| 6   | - **Thực hành:** Xây dựng pipeline CI/CD với CodePipeline <br>&emsp;+ Tích hợp CodeBuild & CodeDeploy <br>&emsp;+ Triển khai ứng dụng mẫu tự động | 20/09/2025 | 20/09/2025 | https://docs.aws.amazon.com/codepipeline |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+### Kết quả đạt được trong Tuần 6:
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ quy trình CI/CD và các thực hành DevOps hiện đại.
+* Tạo thành công một CodeBuild project sử dụng buildspec.yml để tự động hóa quá trình build ứng dụng.
+* Nắm được cơ chế hoạt động của các chiến lược triển khai trong CodeDeploy, bao gồm rolling update và blue/green.
+* Xây dựng thành công một pipeline CI/CD hoàn chỉnh bao gồm:
+  - **CodePipeline** (điều phối pipeline)
+  - **CodeBuild** (giai đoạn build)
+  - **CodeDeploy** (triển khai ứng dụng)
+* Tự động hóa toàn bộ quy trình từ source → build → deploy.
+* Tăng cường kỹ năng về automation, release management và sử dụng các công cụ DevOps trên AWS.

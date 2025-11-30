@@ -1,59 +1,39 @@
 ---
-title: "Worklog Tuần 5"
+title: "Week 5 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 5:
 
-### Mục tiêu tuần 5:
+* Tìm hiểu các kiến thức nền tảng về containerization trên AWS.
+* Hiểu cách Amazon ECR lưu trữ và quản lý container images.
+* Khám phá Amazon ECS và các thành phần chính: tasks, services, clusters.
+* Triển khai ứng dụng dạng container bằng ECS Fargate (serverless compute).
+* Nâng cao kỹ năng triển khai ứng dụng theo kiến trúc cloud-native.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Tìm hiểu kiến thức cơ bản về containers & Docker <br>&emsp;+ Images vs Containers <br>&emsp;+ Dockerfile <br>&emsp;+ Container registries | 08/09/2025 | 08/09/2025 | https://docs.docker.com |
+| 2   | - Tìm hiểu Amazon ECR: <br>&emsp;+ Repositories <br>&emsp;+ Push/pull image <br>&emsp;+ Quyền truy cập & xác thực | 09/09/2025 | 09/09/2025 | https://docs.aws.amazon.com/ecr |
+| 3   | - **Thực hành:** <br>&emsp;+ Build Docker image <br>&emsp;+ Tag & push image lên ECR | 10/09/2025 | 10/09/2025 | https://cloudjourney.awsstudygroup.com |
+| 4   | - Tìm hiểu Amazon ECS: <br>&emsp;+ Clusters <br>&emsp;+ Task Definitions <br>&emsp;+ ECS Services <br>&emsp;+ Launch types: EC2 vs Fargate | 11/09/2025 | 11/09/2025 | https://docs.aws.amazon.com/ecs |
+| 5   | - **Thực hành:** Triển khai ứng dụng container trên ECS Fargate <br>&emsp;+ Tạo ECS cluster <br>&emsp;+ Tạo task definition <br>&emsp;+ Chạy service sử dụng image từ ECR | 12/09/2025 | 12/09/2025 | https://docs.aws.amazon.com/ecs |
+| 6   | - Tìm hiểu networking trong ECS <br>&emsp;+ Security groups <br>&emsp;+ Subnets & ENIs <br>&emsp;+ Kết hợp ALB + ECS | 13/09/2025 | 13/09/2025 | https://docs.aws.amazon.com/elasticloadbalancing |
 
-### Kết quả đạt được tuần 5:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 5:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm vững kiến thức containerization với Docker, bao gồm quá trình build & tag image.
+* Lưu trữ và quản lý container images thành công bằng Amazon ECR.
+* Hiểu rõ kiến trúc Amazon ECS và mối quan hệ giữa clusters, tasks, và services.
+* Triển khai thành công một ứng dụng dạng container sử dụng ECS Fargate (serverless).
+* Hiểu cách ECS tích hợp với VPC networking, security group và Application Load Balancer.
+* Nâng cao kỹ năng triển khai ứng dụng cloud-native bằng các dịch vụ container được quản lý bởi AWS.

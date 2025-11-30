@@ -1,59 +1,40 @@
 ---
-title: "Worklog Tuần 3"
+title: "Week 3 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 3:
 
-### Mục tiêu tuần 3:
+* Tìm hiểu cách AWS xử lý khả năng mở rộng (scaling) và tính sẵn sàng cao (high availability).
+* Hiểu cơ chế hoạt động của Elastic Load Balancing (ELB) và Auto Scaling Groups (ASG).
+* Khám phá CloudWatch: metrics, alarms và logs để giám sát tài nguyên AWS.
+* Xây dựng và thử nghiệm kiến trúc web có khả năng mở rộng sử dụng EC2 + ALB + ASG.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Học về Elastic Load Balancing: <br>&emsp;+ Application Load Balancer (ALB) <br>&emsp;+ Listeners & Target Groups <br>&emsp;+ Health checks | 25/08/2025 | 25/08/2025 | https://docs.aws.amazon.com/elasticloadbalancing |
+| 2   | - **Thực hành:** <br>&emsp;+ Triển khai ALB <br>&emsp;+ Thêm EC2 vào Target Group <br>&emsp;+ Cấu hình health checks & kiểm tra phân phối tải | 26/08/2025 | 26/08/2025 | https://cloudjourney.awsstudygroup.com |
+| 3   | - Tìm hiểu Auto Scaling Groups (ASG): <br>&emsp;+ Launch Templates <br>&emsp;+ Scaling Policies <br>&emsp;+ Desired/Min/Max capacity | 27/08/2025 | 27/08/2025 | https://docs.aws.amazon.com/autoscaling |
+| 4   | - **Thực hành:** <br>&emsp;+ Tạo ASG kèm Launch Template <br>&emsp;+ Gắn ASG với ALB <br>&emsp;+ Kiểm tra scale-out & scale-in | 28/08/2025 | 28/08/2025 | https://docs.aws.amazon.com/autoscaling |
+| 5   | - Học về giám sát với CloudWatch: <br>&emsp;+ Metrics <br>&emsp;+ Dashboards <br>&emsp;+ CloudWatch Alarms <br>&emsp;+ Monitoring cho EC2 & ASG | 29/08/2025 | 29/08/2025 | https://docs.aws.amazon.com/cloudwatch |
+| 6   | - **Thực hành:** <br>&emsp;+ Tạo CPU utilization alarm <br>&emsp;+ Gắn alarm vào scaling policy của ASG <br>&emsp;+ Kiểm tra CloudWatch Logs | 30/08/2025 | 30/08/2025 | https://cloudjourney.awsstudygroup.com |
 
-### Kết quả đạt được tuần 3:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 3:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu cách Elastic Load Balancer phân phối lưu lượng và tăng độ sẵn sàng cho hệ thống.
+* Triển khai thành công Application Load Balancer và cấu hình listeners, target groups và health checks.
+* Nắm vững cách Auto Scaling Group hoạt động để duy trì khả năng mở rộng và tính ổn định của ứng dụng.
+* Tạo Launch Template và cấu hình Auto Scaling với các chính sách scaling động.
+* Kiểm tra hoạt động scale-in và scale-out bằng cách sử dụng CloudWatch CPU alarms.
+* Tìm hiểu các tính năng CloudWatch như metrics, dashboards, alarms và logs để theo dõi hiệu năng hệ thống.
+* Xây dựng hoàn chỉnh kiến trúc có thể mở rộng gồm EC2 + ALB + ASG + CloudWatch.
+* Tích lũy kinh nghiệm thực tế trong thiết kế workload chịu lỗi (fault-tolerant) trên AWS.

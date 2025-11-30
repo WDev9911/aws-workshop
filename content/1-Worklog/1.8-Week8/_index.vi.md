@@ -1,59 +1,39 @@
 ---
-title: "Worklog Tuần 8"
+title: "Week 8 Worklog"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 8:
 
-### Mục tiêu tuần 8:
+* Củng cố kiến thức về các công cụ giám sát và quan sát hệ thống (observability) trên AWS.
+* Tìm hiểu chuyên sâu về CloudWatch Logs, Metrics, Dashboards và Alarms.
+* Hiểu CloudTrail để theo dõi hoạt động API và mục đích auditing.
+* Học AWS Config để giám sát cấu hình tài nguyên và tuân thủ (compliance).
+* Xây dựng hệ thống giám sát và kiểm toán (auditing) cho tài nguyên cloud.
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ được thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------ | ---------------- | ------------------ |
+| 1   | - Tìm hiểu chuyên sâu CloudWatch Metrics <br>&emsp;+ EC2 metrics <br>&emsp;+ Custom metrics <br>&emsp;+ Dashboards | 29/09/2025 | 29/09/2025 | https://docs.aws.amazon.com/cloudwatch |
+| 2   | - **Thực hành:** Tạo CloudWatch Dashboard <br>&emsp;+ Thêm biểu đồ CPU/Network của EC2 <br>&emsp;+ Thêm metrics của S3 & Lambda | 30/09/2025 | 30/09/2025 | https://cloudjourney.awsstudygroup.com |
+| 3   | - Tìm hiểu CloudWatch Logs và Logs Insights <br>&emsp;+ Log groups/streams <br>&emsp;+ Viết truy vấn bằng CloudWatch Logs Insights | 01/10/2025 | 01/10/2025 | https://docs.aws.amazon.com/cloudwatch |
+| 4   | - Tìm hiểu CloudTrail: <br>&emsp;+ Event history <br>&emsp;+ Trails <br>&emsp;+ Management events vs Data events <br>&emsp;+ Security auditing | 02/10/2025 | 02/10/2025 | https://docs.aws.amazon.com/cloudtrail |
+| 5   | - Học AWS Config: <br>&emsp;+ Configuration items <br>&emsp;+ Rules <br>&emsp;+ Timeline & drift detection | 03/10/2025 | 03/10/2025 | https://docs.aws.amazon.com/config |
+| 6   | - **Thực hành:** <br>&emsp;+ Kích hoạt AWS Config Rules <br>&emsp;+ Phát hiện tài nguyên không tuân thủ <br>&emsp;+ Kiểm tra CloudTrail Logs để xem hoạt động API | 04/10/2025 | 04/10/2025 | https://docs.aws.amazon.com/config |
 
-### Kết quả đạt được tuần 8:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được trong Tuần 8:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu sâu hơn về CloudWatch Metrics và cách chúng phản ánh hiệu suất hệ thống.
+* Tạo thành công CloudWatch Dashboards để trực quan hóa metrics của EC2, S3 và Lambda.
+* Có kinh nghiệm làm việc với CloudWatch Logs và sử dụng Logs Insights để truy vấn log.
+* Hiểu rõ cách CloudTrail ghi lại các cuộc gọi API và vai trò của nó trong auditing và bảo mật.
+* Sử dụng AWS Config để theo dõi thay đổi cấu hình và phát hiện tài nguyên không tuân thủ.
+* Nâng cao kỹ năng giám sát, logging, auditing và duy trì mức độ quan sát (observability) cho môi trường cloud.

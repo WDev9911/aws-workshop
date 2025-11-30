@@ -5,53 +5,39 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn the fundamentals of serverless computing on AWS.
+* Understand AWS Lambda execution model, triggers, permissions, and runtime.
+* Explore API Gateway for building RESTful APIs.
+* Learn DynamoDB concepts: partitions, primary keys, and read/write capacity.
+* Build and deploy a basic serverless application.
+
+---
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ----- | ---------- | ---------------- | ------------------ |
+| 1   | - Learn AWS Lambda fundamentals <br>&emsp;+ Execution model <br>&emsp;+ Runtimes <br>&emsp;+ IAM roles for Lambda | 09/01/2025 | 09/01/2025 | https://docs.aws.amazon.com/lambda |
+| 2   | - **Practice:** Create first Lambda function <br>&emsp;+ Test using AWS Console <br>&emsp;+ Review logs in CloudWatch | 09/02/2025 | 09/02/2025 | https://docs.aws.amazon.com/lambda |
+| 3   | - Learn API Gateway basics <br>&emsp;+ REST API vs HTTP API <br>&emsp;+ Methods, routes, stages | 09/03/2025 | 09/03/2025 | https://docs.aws.amazon.com/apigateway |
+| 4   | - **Practice:** Build REST API with API Gateway <br>&emsp;+ Integrate API Gateway → Lambda <br>&emsp;+ Deploy & test via Postman | 09/04/2025 | 09/04/2025 | https://cloudjourney.awsstudygroup.com |
+| 5   | - Learn DynamoDB fundamentals <br>&emsp;+ Partition key & sort key <br>&emsp;+ Items & attributes <br>&emsp;+ RCU / WCU | 09/05/2025 | 09/05/2025 | https://docs.aws.amazon.com/dynamodb |
+| 6   | - **Practice:** <br>&emsp;+ Create DynamoDB Table <br>&emsp;+ Lambda → DynamoDB integration <br>&emsp;+ Implement simple CRUD logic | 09/06/2025 | 09/06/2025 | https://docs.aws.amazon.com/dynamodb |
+
+---
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Learned how serverless architecture works and how Lambda manages compute automatically.
+* Built and tested multiple Lambda functions and monitored them using CloudWatch Logs.
+* Created a RESTful API using API Gateway and successfully integrated it with Lambda.
+* Understood DynamoDB table design, partition keys, sort keys, throughput capacity, and best practices.
+* Built a simple serverless CRUD workflow using:
+  - API Gateway (API routing)
+  - Lambda (function logic)
+  - DynamoDB (NoSQL database)
+* Strengthened the ability to build lightweight, event-driven, highly scalable backend systems on AWS.
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
