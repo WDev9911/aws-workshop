@@ -1,6 +1,7 @@
 baseURL = "https://workshop-sample.fcjuni.com/"
 relativeURLs = false
 canonifyURLs = false
+publishDir = "docs"
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
